@@ -15,6 +15,7 @@ public class MyApplication extends Application<MyConfiguration> {
         environment.jersey().register(new PathParamResource());
         environment.jersey().register(new QueryParamResource());
         environment.jersey().register(new PostResource());
+        environment.jersey().register(new ListParamResource());
     }
 
 }
