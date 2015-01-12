@@ -13,6 +13,7 @@ public class MyApplication extends Application<MyConfiguration> {
     public void run(MyConfiguration configuration, Environment environment) {
         environment.jersey().register(new SimpleResource());
         environment.jersey().register(new PathParamResource());
+        environment.jersey().register(new QueryParamResource());
     }
 
 }
