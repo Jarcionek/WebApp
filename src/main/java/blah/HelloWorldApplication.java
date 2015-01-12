@@ -11,7 +11,8 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
 
     @Override
     public void run(HelloWorldConfiguration configuration, Environment environment) {
-        environment.jersey().register(new HelloWorldResource());
+        environment.jersey().register(new SimpleResource());
+        environment.jersey().register(new PathParamResource());
     }
 
 }
