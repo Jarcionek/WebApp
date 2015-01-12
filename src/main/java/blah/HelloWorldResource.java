@@ -1,7 +1,7 @@
 package blah;
 
-import com.google.common.base.Optional;
 import com.codahale.metrics.annotation.Timed;
+import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableMap;
 
 import javax.ws.rs.GET;
@@ -12,6 +12,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
+@Path("")
 public class HelloWorldResource {
 
     private final AtomicLong counter;
