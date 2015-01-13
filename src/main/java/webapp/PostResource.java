@@ -1,4 +1,4 @@
-package blah;
+package webapp;
 
 import com.codahale.metrics.annotation.Timed;
 

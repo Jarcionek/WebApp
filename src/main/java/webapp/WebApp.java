@@ -1,16 +1,16 @@
-package blah;
+package webapp;
 
 import io.dropwizard.Application;
 import io.dropwizard.setup.Environment;
 
-public class MyApplication extends Application<MyConfiguration> {
+public class WebApp extends Application<WebAppConfiguration> {
 
     public static void main(String[] args) throws Exception {
-        new MyApplication().run(args);
+        new WebApp().run(args);
     }
 
     @Override
-    public void run(MyConfiguration configuration, Environment environment) {
+    public void run(WebAppConfiguration configuration, Environment environment) {
         environment.jersey().register(new SimpleResource());
         environment.jersey().register(new PathParamResource());
         environment.jersey().register(new QueryParamResource());
